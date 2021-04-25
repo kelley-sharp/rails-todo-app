@@ -1,0 +1,9 @@
+<%= content_tag :div,
+  '',
+  id: "todo-list",
+  data: {
+    todos: @todos.to_json 
+  }
+%>
+
+    <%= javascript_pack_tag 'todos/index', 'data-turbolinks-track': 'reload' %>
